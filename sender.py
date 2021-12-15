@@ -60,7 +60,7 @@ if __name__ == "__main__":
     for filename in os.listdir('imgs'):
         images.append(imageio.imread(filename))
     imageio.mimwrite('res.gif', images)
-# # print(qr_images)
-# # for qr_image in qr_images:
-# #     qr_image
-# # image.show()
+# print(qr_images)
+# for qr_image in qr_images:
+#     qr_image
+# image.show()
