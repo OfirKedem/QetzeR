@@ -2,6 +2,8 @@ import json
 import math
 import os
 import sys
+from pathlib import Path
+
 import qrcode
 import base64
 import imageio
@@ -57,7 +59,7 @@ if __name__ == "__main__":
         img.save(path)
 
     images = []
-    for filename in os.listdir('imgs'):
+    for filename in Path('imgs').iterdir():
         images.append(imageio.imread(filename))
     imageio.mimwrite('res.gif', images)
 # print(qr_images)
